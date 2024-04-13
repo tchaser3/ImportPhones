@@ -1,0 +1,20 @@
+﻿<Window x:Class="ImportPhones.EditPhone"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        xmlns:local="clr-namespace:ImportPhones"
+        mc:Ignorable="d"
+        Title="EditPhone" Height="450" Width="450" Loaded="Window_Loaded">
+    <Grid>
+        <TextBox x:Name="txtExtension" IsReadOnly="True" Background="LightGray" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" HorizontalAlignment="Left" Height="53" Margin="199,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="206"/>
+        <TextBox x:Name="txtEnterLastName" CharacterCasing="Upper" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" HorizontalAlignment="Left" Height="53" Margin="199,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="206" TextChanged="TxtEnterLastName_TextChanged"/>
+        <ComboBox x:Name="cboSelectEmployee" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" FontSize="16" Margin="199,219,0,0" VerticalAlignment="Top" Width="206" Height="53" SelectionChanged="CboSelectEmployee_SelectionChanged"/>
+        <Label x:Name="lblPhoneExtension" Content="Phone Extension" FontSize="18" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="31,40,0,0" VerticalAlignment="Top" Height="53" Width="163"/>
+        <Label x:Name="lblEnterLastName" Content="Enter Last Name" FontSize="18" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="31,131,0,0" VerticalAlignment="Top" Height="53" Width="163"/>
+        <Label x:Name="lblSelectEmployee" Content="Select Employee" FontSize="18" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="31,219,0,0" VerticalAlignment="Top" Height="53" Width="163"/>
+        <Button x:Name="btnProcess" Content="Process" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" FontSize="22" Width="150" Height="54" Margin="199,296,93,92" Click="BtnProcess_Click"/>
+    </Grid>
+</Window>
